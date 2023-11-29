@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Chau Yi Zhe">
+        <meta name="description" content="Practical 3 Part B">
+        <meta name="date created" content="31 Oct 2023">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <link rel="icon" type="media/x-icon" href="Media/NP(2).ico">
+        <title>FC Practical 3B</title>
+    <script>function lti_launch( vars, target ) {
+						var query = '';
+						var new_tab = false;
+
+						for(var key in vars) {
+							if(query.length == 0) {
+								query += '?' + key + '=' + encodeURIComponent(vars[key]);
+							}
+							else {
+								query += '&' + key + '=' + encodeURIComponent(vars[key]);
+							}
+						}
+
+						var url = '/d2l/customization/pearsonlti/362521/Launch' + query;(target == '_blank') ? window.open( url, '_blank' ) : location.replace( url );}</script><script src="https://s.brightspace.com/lib/bsi/20.23.9-217/unbundled/mathjax.js?v=20.23.9.18917" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
+					if (document.querySelector('math') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+						document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+							elm.setAttribute('style', 'display: block; height: 0.5rem;');
+						});
+
+						window.D2L.MathJax.loadMathJax({
+							'outputScale': 1.5,
+							'renderLatex': true
+						});
+					}
+				});</script><script src="https://s.brightspace.com/lib/bsi/20.23.9-217/unbundled/prism.js?v=20.23.9.18917" type="module"></script><script>document.addEventListener('DOMContentLoaded', function() {
+					document.querySelectorAll('.d2l-code').forEach(code => {
+						window.D2L.Prism.formatCodeElement(code);
+					});
+				});</script><script>window.addEventListener('message', function(event) { 
+					if( !event.data ) {
+						return;
+					}
+
+					var params;
+					try {
+						params = JSON.parse( event.data );
+					}
+					catch {
+						return;
+					}
+					if( !params.subject || params.subject !== 'lti.frameResize' ) {
+						return;
+					}
+
+					const MAX_FRAME_HEIGHT = 10000
+					if( !params.height || params.height < 1 || params.height > MAX_FRAME_HEIGHT ) {
+						console.warn( 'Invalid height value received, aborting' );
+						return;
+					}
+					var el = document.getElementsByTagName( 'iframe' );
+					for ( var i=0; i < el.length; i++ ) {
+						if( el[i].contentWindow === event.source ) {
+							el[i].style.height = params.height + 'px';
+							el[i].style.width = '100%';
+							console.info( 'Setting iFrame height to ' + params.height );
+							console.info( 'Setting iFrame width to 100%' );
+						}
+					}
+				});</script></head>
+    <body style="font-family: Verdana, Geneva, Tahoma, sans-serif; width:60%; margin:auto;">
+		<h1>Enquiry Form</h1>
+		<hr>
+		<p>We value your euquiry. Please fill in the form below and click Submit button.</p>
+		<form method="post" action="mailto:email@np.edu.sg" enctype="type/plain" style="background-color:lightgray; padding:10px">
+		<p>
+
+			<label for="name" style="display:inline-block;font-weight:bold;width:100px"><b>First Name: </b></label>
+			
+			<input type="text" id="name" name="name">
+
+			<label for="name" style="display:inline-block;font-weight:bold;width:100px"><b>Last Name: </b></label>
+			
+			<input type="text" id="name" name="name">
+			
+		</p>
+		<p>
+
+			<label for="email" style="display:inline-block;font-weight:bold;width:100px"><b>Email: </b></label>
+			
+			<input type="text" id="email" name="email">
+
+		</p>
+		<p>
+
+			<label for="comment" style="display:inline-block;font-weight:bold;width:100px"><b>Comment: </b></label>
+				
+			<textarea id="comment" name="comment" rows="5" cols="55"> </textarea>
+				
+		</p>
+		<input type="submit" value="Submit Feedback">
+		<input type="reset" value="Clear Form">
+		</form>
+    </body>
+</html>
